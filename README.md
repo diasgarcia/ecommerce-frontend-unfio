@@ -1,2 +1,2 @@
 # ecommerce-frontend-unfio
-Repositorio frontend do Geekhub para a materia de Projeto Integrador
+Repositorio frontend do Ecommerce para a materia de Projeto Integrador

@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "geekhub": {
+    "ecommerce": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -68,10 +68,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "geekhub:build:production"
+              "buildTarget": "ecommerce:build:production"
             },
             "development": {
-              "buildTarget": "geekhub:build:development"
+              "buildTarget": "ecommerce:build:development"
             }
           },
           "defaultConfiguration": "development"

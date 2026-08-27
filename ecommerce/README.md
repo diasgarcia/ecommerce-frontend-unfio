@@ -58,7 +58,14 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
 
-# Iniciado com
+# Comandos usados:
 ```bash
+# Inicia o proejto
 ng new ecommerce --no-standalone --routing --ssr=false
+
+# Criando moculo
+ng g m categoria
+
+# Criando componente
+ng g c categoria/cadastro
 ```

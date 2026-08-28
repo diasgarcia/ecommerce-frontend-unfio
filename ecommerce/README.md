@@ -64,7 +64,7 @@ For more information on using the Angular CLI, including detailed command refere
 ng new ecommerce --no-standalone --routing --ssr=false
 
 # Criando moculo
-ng g m categoria
+ng g m categoria --routing
 
 # Criando componente
 ng g c categoria/cadastro

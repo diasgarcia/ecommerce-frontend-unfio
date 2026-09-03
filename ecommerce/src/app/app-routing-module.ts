@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'produto',
     loadChildren: () => import('./produto/produto-module').then(m => m.ProdutoModule),
   },
+  {
+    path: 'lista-exercicios',
+    loadChildren: () => import('./lista-exercicios/lista-exercicios-module').then(m => m.ListaExerciciosModule),
+  }
 ];
 
 @NgModule({

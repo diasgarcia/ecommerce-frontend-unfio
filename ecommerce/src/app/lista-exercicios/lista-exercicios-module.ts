@@ -10,6 +10,7 @@ import { Ex4BotaoHabilitadoOuDesabilitado } from './ex4-botao-habilitado-ou-desa
 import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-de-curtidas';
 import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-completo';
 import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/ex7-nome-em-tempo-real';
+import { Ex8CadastroDeProduto } from './ex8-cadastro-de-produto/ex8-cadastro-de-produto';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/ex7-nome-em-tempo-r
     Ex5ContadorDeCurtidas,
     Ex6ContadorCompleto,
     Ex7NomeEmTempoReal,
+    Ex8CadastroDeProduto,
   ],
   imports: [CommonModule, FormsModule, ListaExerciciosRoutingModule],
 })

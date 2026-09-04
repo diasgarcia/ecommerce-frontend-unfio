@@ -7,6 +7,7 @@ import { Ex4BotaoHabilitadoOuDesabilitado } from './ex4-botao-habilitado-ou-desa
 import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-de-curtidas';
 import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-completo';
 import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/ex7-nome-em-tempo-real';
+import { Ex8CadastroDeProduto } from './ex8-cadastro-de-produto/ex8-cadastro-de-produto';
 
 const routes: Routes = [
   {
@@ -36,6 +37,10 @@ const routes: Routes = [
   {
     path: 'ex7-nome-em-tempo-real',
     component: Ex7NomeEmTempoReal,
+  },
+  {
+    path: 'ex8-cadastro-de-produto',
+    component: Ex8CadastroDeProduto,
   },
 ];
 

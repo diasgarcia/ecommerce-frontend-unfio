@@ -1,0 +1,22 @@
+<p>ex10-login-simulado works!</p>
+
+<p>
+  Usuário:
+  <input [(ngModel)]="usuario" (ngModelChange)="boasVindas = ''" placeholder="Seu usuario: " />
+</p>
+
+<p>
+  Senha:
+  <input
+    type="password"
+    [(ngModel)]="senha"
+    (ngModelChange)="boasVindas = ''"
+    placeholder="Sua senha: "
+  />
+</p>
+
+<button [disabled]="!botaoEntrarValido" (click)="clickEntrar()">Entrar</button>
+
+@if (boasVindas) {
+  <p>{{ boasVindas }}</p>
+}

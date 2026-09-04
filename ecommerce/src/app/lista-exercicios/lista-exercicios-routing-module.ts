@@ -9,6 +9,7 @@ import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-comple
 import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/ex7-nome-em-tempo-real';
 import { Ex8CadastroDeProduto } from './ex8-cadastro-de-produto/ex8-cadastro-de-produto';
 import { Ex9ControleEstoque } from './ex9-controle-estoque/ex9-controle-estoque';
+import { Ex10LoginSimulado } from './ex10-login-simulado/ex10-login-simulado';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'ex9-controle-estoque',
     component: Ex9ControleEstoque,
+  },
+  {
+    path: 'ex10-login-simulado',
+    component: Ex10LoginSimulado,
   },
 ];
 

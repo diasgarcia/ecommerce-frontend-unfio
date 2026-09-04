@@ -1,0 +1,28 @@
+<p>desafio-final-matricula-em-curso works!</p>
+
+<h2>Matrícula em curso</h2>
+
+<p>
+  Nome do aluno:
+  <input [(ngModel)]="nomeAluno" placeholder="Digite o nome do aluno" />
+</p>
+
+<p>
+  Quantidade de disciplinas:
+
+  <button [disabled]="quantidadeDisciplinas === 1" (click)="diminuirQuantidade()">-</button>
+
+  {{ quantidadeDisciplinas }}
+
+  <button (click)="aumentarQuantidade()">+</button>
+</p>
+
+<p>Nome: {{ nomeAluno }}</p>
+
+<p>Disciplinas: {{ quantidadeDisciplinas }}</p>
+
+<button [disabled]="!botaoMatriculaValido" (click)="realizarMatricula()">Realizar Matrícula</button>
+
+@if (mensagem) {
+  <p>{{ mensagem }}</p>
+}

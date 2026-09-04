@@ -5,9 +5,10 @@ import { ListaExerciciosRoutingModule } from './lista-exercicios-routing-module'
 import { Ex1ApresentacaoDoAluno } from './ex1-apresentacao-do-aluno/ex1-apresentacao-do-aluno';
 import { FormsModule } from '@angular/forms';
 import { Ex2CalculandoComInterpolation } from './ex2-calculando-com-interpolation/ex2-calculando-com-interpolation';
+import { Ex3ImagemDinamica } from './ex3-imagem-dinamica/ex3-imagem-dinamica';
 
 @NgModule({
-  declarations: [Ex1ApresentacaoDoAluno, Ex2CalculandoComInterpolation],
+  declarations: [Ex1ApresentacaoDoAluno, Ex2CalculandoComInterpolation, Ex3ImagemDinamica],
   imports: [CommonModule, FormsModule, ListaExerciciosRoutingModule],
 })
 export class ListaExerciciosModule {}

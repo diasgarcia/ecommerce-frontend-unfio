@@ -6,9 +6,15 @@ import { Ex1ApresentacaoDoAluno } from './ex1-apresentacao-do-aluno/ex1-apresent
 import { FormsModule } from '@angular/forms';
 import { Ex2CalculandoComInterpolation } from './ex2-calculando-com-interpolation/ex2-calculando-com-interpolation';
 import { Ex3ImagemDinamica } from './ex3-imagem-dinamica/ex3-imagem-dinamica';
+import { Ex4BotaoHabilitadoOuDesabilitado } from './ex4-botao-habilitado-ou-desabilitado/ex4-botao-habilitado-ou-desabilitado';
 
 @NgModule({
-  declarations: [Ex1ApresentacaoDoAluno, Ex2CalculandoComInterpolation, Ex3ImagemDinamica],
+  declarations: [
+    Ex1ApresentacaoDoAluno,
+    Ex2CalculandoComInterpolation,
+    Ex3ImagemDinamica,
+    Ex4BotaoHabilitadoOuDesabilitado,
+  ],
   imports: [CommonModule, FormsModule, ListaExerciciosRoutingModule],
 })
 export class ListaExerciciosModule {}

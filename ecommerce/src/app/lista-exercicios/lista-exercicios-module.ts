@@ -13,6 +13,7 @@ import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/ex7-nome-em-tempo-r
 import { Ex8CadastroDeProduto } from './ex8-cadastro-de-produto/ex8-cadastro-de-produto';
 import { Ex9ControleEstoque } from './ex9-controle-estoque/ex9-controle-estoque';
 import { Ex10LoginSimulado } from './ex10-login-simulado/ex10-login-simulado';
+import { Ex11CarrinhoDeCompras } from './ex11-carrinho-de-compras/ex11-carrinho-de-compras';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { Ex10LoginSimulado } from './ex10-login-simulado/ex10-login-simulado';
     Ex8CadastroDeProduto,
     Ex9ControleEstoque,
     Ex10LoginSimulado,
+    Ex11CarrinhoDeCompras,
   ],
   imports: [CommonModule, FormsModule, ListaExerciciosRoutingModule],
 })

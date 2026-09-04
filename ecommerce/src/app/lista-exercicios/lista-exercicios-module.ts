@@ -8,6 +8,7 @@ import { Ex2CalculandoComInterpolation } from './ex2-calculando-com-interpolatio
 import { Ex3ImagemDinamica } from './ex3-imagem-dinamica/ex3-imagem-dinamica';
 import { Ex4BotaoHabilitadoOuDesabilitado } from './ex4-botao-habilitado-ou-desabilitado/ex4-botao-habilitado-ou-desabilitado';
 import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-de-curtidas';
+import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-completo';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-d
     Ex3ImagemDinamica,
     Ex4BotaoHabilitadoOuDesabilitado,
     Ex5ContadorDeCurtidas,
+    Ex6ContadorCompleto,
   ],
   imports: [CommonModule, FormsModule, ListaExerciciosRoutingModule],
 })

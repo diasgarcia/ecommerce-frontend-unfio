@@ -5,6 +5,7 @@ import { Ex2CalculandoComInterpolation } from './ex2-calculando-com-interpolatio
 import { Ex3ImagemDinamica } from './ex3-imagem-dinamica/ex3-imagem-dinamica';
 import { Ex4BotaoHabilitadoOuDesabilitado } from './ex4-botao-habilitado-ou-desabilitado/ex4-botao-habilitado-ou-desabilitado';
 import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-de-curtidas';
+import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-completo';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'ex5-contador-de-curtidas',
     component: Ex5ContadorDeCurtidas
+  },
+  {
+    path: 'ex6-contador-completo',
+    component: Ex6ContadorCompleto
   }
 ];
 

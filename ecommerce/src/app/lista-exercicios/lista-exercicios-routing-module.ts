@@ -6,6 +6,7 @@ import { Ex3ImagemDinamica } from './ex3-imagem-dinamica/ex3-imagem-dinamica';
 import { Ex4BotaoHabilitadoOuDesabilitado } from './ex4-botao-habilitado-ou-desabilitado/ex4-botao-habilitado-ou-desabilitado';
 import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-de-curtidas';
 import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-completo';
+import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/nome-em-tempo-real';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'ex6-contador-completo',
     component: Ex6ContadorCompleto
+  },
+  {
+    path: 'ex7-nome-em-tempo-real',
+    component: Ex7NomeEmTempoReal
   }
 ];
 

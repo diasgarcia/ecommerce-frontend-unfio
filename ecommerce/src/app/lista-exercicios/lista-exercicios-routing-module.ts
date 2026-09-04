@@ -6,37 +6,37 @@ import { Ex3ImagemDinamica } from './ex3-imagem-dinamica/ex3-imagem-dinamica';
 import { Ex4BotaoHabilitadoOuDesabilitado } from './ex4-botao-habilitado-ou-desabilitado/ex4-botao-habilitado-ou-desabilitado';
 import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-de-curtidas';
 import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-completo';
-import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/nome-em-tempo-real';
+import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/ex7-nome-em-tempo-real';
 
 const routes: Routes = [
   {
     path: 'ex1-apresentacao-do-aluno',
-    component: Ex1ApresentacaoDoAluno
+    component: Ex1ApresentacaoDoAluno,
   },
   {
     path: 'ex2-calculando-com-interpolation',
-    component: Ex2CalculandoComInterpolation
+    component: Ex2CalculandoComInterpolation,
   },
   {
     path: 'ex3-imagem-dinamica',
-    component: Ex3ImagemDinamica
+    component: Ex3ImagemDinamica,
   },
   {
     path: 'ex4-botao-habilitado-ou-desabilitado',
-    component: Ex4BotaoHabilitadoOuDesabilitado
+    component: Ex4BotaoHabilitadoOuDesabilitado,
   },
   {
     path: 'ex5-contador-de-curtidas',
-    component: Ex5ContadorDeCurtidas
+    component: Ex5ContadorDeCurtidas,
   },
   {
     path: 'ex6-contador-completo',
-    component: Ex6ContadorCompleto
+    component: Ex6ContadorCompleto,
   },
   {
     path: 'ex7-nome-em-tempo-real',
-    component: Ex7NomeEmTempoReal
-  }
+    component: Ex7NomeEmTempoReal,
+  },
 ];
 
 @NgModule({

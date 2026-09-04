@@ -11,6 +11,7 @@ import { Ex5ContadorDeCurtidas } from './ex5-contador-de-curtidas/ex5-contador-d
 import { Ex6ContadorCompleto } from './ex6-contador-completo/ex6-contador-completo';
 import { Ex7NomeEmTempoReal } from './ex7-nome-em-tempo-real/ex7-nome-em-tempo-real';
 import { Ex8CadastroDeProduto } from './ex8-cadastro-de-produto/ex8-cadastro-de-produto';
+import { Ex9ControleEstoque } from './ex9-controle-estoque/ex9-controle-estoque';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { Ex8CadastroDeProduto } from './ex8-cadastro-de-produto/ex8-cadastro-de-
     Ex6ContadorCompleto,
     Ex7NomeEmTempoReal,
     Ex8CadastroDeProduto,
+    Ex9ControleEstoque,
   ],
   imports: [CommonModule, FormsModule, ListaExerciciosRoutingModule],
 })

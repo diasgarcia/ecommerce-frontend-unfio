@@ -1,0 +1,9 @@
+<p>ex9-controle-estoque works!</p>
+
+<input [(ngModel)]="produto" placeholder="Nome no produto: " />
+
+<button [disabled]="!botaoAdicionarValido" (click)="aumentarEstoque()">+</button>
+<button [disabled]="!botaoDiminuirValido" (click)="diminuirEstoque()">-</button>
+
+<p>Nome do Produto: {{ produto }}</p>
+<p>Quantidade: {{ quantidade }}</p>

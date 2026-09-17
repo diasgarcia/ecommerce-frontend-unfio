@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'lista-exercicios',
     loadChildren: () => import('./lista-exercicios/lista-exercicios-module').then(m => m.ListaExerciciosModule),
+  },
+  {
+    path: 'lista-exercicios-2',
+    loadChildren: () => import('./lista-exercicios-2/lista-exercicios-2-module').then(m => m.ListaExercicios2Module),
   }
 ];
 

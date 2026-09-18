@@ -1,0 +1,37 @@
+<p>ex8-lista-de-produtos works!</p>
+
+<!-- <dl>
+    @for (produto of produtos; track produto.id) {
+        <dt>Item {{ $index + 1}}</dt>
+
+        <dd>id: {{ produto.id }}</dd>
+        <dd>nome: {{ produto.nome }}</dd>
+        <dd>preco: {{ produto.preco | currency:'BRL' }}</dd>
+        <dd>quantidade: {{ produto.quantidade }}</dd>
+        <dd>valor total em estoque: {{ produto.preco * produto.quantidade | currency:'BRL' }}</dd>
+        <br>
+    }
+</dl> -->
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Qtd</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (p of produtos; track p.id) {
+      <tr>
+        <td>{{ $index + 1 }}</td>
+        <td>{{ p.nome }}</td>
+        <td class="num">{{ p.preco | currency:'BRL' }}</td>
+        <td class="num">{{ p.quantidade }}</td>
+        <td class="num">{{ p.preco * p.quantidade | currency:'BRL' }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

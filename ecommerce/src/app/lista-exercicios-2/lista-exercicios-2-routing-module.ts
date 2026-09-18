@@ -9,6 +9,7 @@ import { Ex6TratamentoDeListaVazia } from './ex6-tratamento-de-lista-vazia/ex6-t
 import { Ex7CoresAlternadas } from './ex7-cores-alternadas/ex7-cores-alternadas';
 import { Ex8ListaDeProdutos } from './ex8-lista-de-produtos/ex8-lista-de-produtos';
 import { Ex9ClassificacaoDosProdutos } from './ex9-classificacao-dos-produtos/ex9-classificacao-dos-produtos';
+import { Ex10PromocaoEEstiloDinamico } from './ex10-promocao-e-estilo-dinamico/ex10-promocao-e-estilo-dinamico';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path: 'ex9',
     component: Ex9ClassificacaoDosProdutos,
+  },
+  {
+    path: 'ex10',
+    component: Ex10PromocaoEEstiloDinamico,
   },
 ];
 

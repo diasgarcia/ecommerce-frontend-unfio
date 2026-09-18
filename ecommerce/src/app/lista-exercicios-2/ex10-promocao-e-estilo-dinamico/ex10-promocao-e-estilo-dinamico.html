@@ -1,0 +1,24 @@
+<p>ex10-promocao-e-estilo-dinamico works!</p>
+
+<table>
+  <tbody>
+    @for (p of produtos; track p.id) {
+      <tr [ngStyle]="{'font-weight': p.promocao ? 'bold' : 'normal'}">
+        <td>{{ p.nome }}</td>
+        <td [ngStyle]="{'color': p.promocao ? 'green' : 'inherit'}">
+          {{ p.preco | currency:'BRL' }}
+        </td>
+        <td>
+          @if (p.promocao) {
+            <span>Produto em promoção</span>
+          }
+        </td>
+        <td>
+          <button (click)="togglePromocao(p)">
+            {{ p.promocao ? 'Desativar' : 'Ativar' }} promoção
+          </button>
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

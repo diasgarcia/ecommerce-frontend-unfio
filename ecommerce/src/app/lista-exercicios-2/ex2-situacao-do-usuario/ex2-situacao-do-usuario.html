@@ -1,0 +1,9 @@
+<p>ex2-situacao-do-usuario works!</p>
+
+@if (usuarioLogado) {
+    <button (click)="alterarUsuarioLogado()">Deslogar</button>
+    <p>Usuário autenticado!</p>
+} @else {
+    <button (click)="alterarUsuarioLogado()">Logar</button>
+    <p>Acesso não autorizado!</p> 
+}

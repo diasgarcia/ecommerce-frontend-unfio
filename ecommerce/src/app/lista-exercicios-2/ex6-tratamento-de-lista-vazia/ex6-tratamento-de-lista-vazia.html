@@ -1,0 +1,18 @@
+<p>ex6-tratamento-de-lista-vazia works!</p>
+
+
+@if (pessoas.length === 0) {
+    <button (click)="restaurarListaInicial()">Restaurar lista</button>
+    <p>Nenhum nome cadastrado!</p>
+} @else {
+    <button (click)="removerUltimoNome()">Remover ultimo</button>
+    <button (click)="limparLista()">Limpar lista</button>
+    <p>Quantidade de nomes: {{ pessoas.length }}</p>
+}
+
+<ul>
+    @for (pessoa of pessoas; track pessoa.id) {
+        <li>{{ pessoa.nome }}</li>
+    }
+</ul>
+

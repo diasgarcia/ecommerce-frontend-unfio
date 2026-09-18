@@ -5,6 +5,7 @@ import { Ex2SituacaoDoUsuario } from './ex2-situacao-do-usuario/ex2-situacao-do-
 import { Ex3VerificacaoDeIdade } from './ex3-verificacao-de-idade/ex3-verificacao-de-idade';
 import { Ex4SituacaoDoEstoque } from './ex4-situacao-do-estoque/ex4-situacao-do-estoque';
 import { Ex5ListaDeNomes } from './ex5-lista-de-nomes/ex5-lista-de-nomes';
+import { Ex6TratamentoDeListaVazia } from './ex6-tratamento-de-lista-vazia/ex6-tratamento-de-lista-vazia';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'ex5',
     component: Ex5ListaDeNomes,
+  },
+  {
+    path: 'ex6',
+    component: Ex6TratamentoDeListaVazia,
   },
 ];
 

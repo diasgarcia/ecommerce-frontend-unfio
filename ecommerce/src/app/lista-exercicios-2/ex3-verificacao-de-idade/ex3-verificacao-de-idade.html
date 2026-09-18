@@ -1,0 +1,18 @@
+<p>ex3-verificacao-de-idade works!</p>
+
+
+<button (click)="diminuirIdade()">-</button>
+<button (click)="aumentarIdade()">+</button>
+
+<p>Idade atual: <strong>{{ idade }} anos</strong></p>
+
+@if (idade < 12) {
+  <p class="resultado">Classificação: <strong>Criança</strong></p>
+} @else if (idade >= 12 && idade <= 17) {
+  <p class="resultado">Classificação: <strong>Adolescente</strong></p>
+} @else if (idade >= 18 && idade <= 59) {
+  <p class="resultado">Classificação: <strong>Adulto</strong></p>
+} @else {
+  <p class="resultado">Classificação: <strong>Idoso</strong></p>
+}
+

@@ -8,6 +8,7 @@ import { Ex2SituacaoDoUsuario } from './ex2-situacao-do-usuario/ex2-situacao-do-
 import { Ex3VerificacaoDeIdade } from './ex3-verificacao-de-idade/ex3-verificacao-de-idade';
 import { Ex4SituacaoDoEstoque } from './ex4-situacao-do-estoque/ex4-situacao-do-estoque';
 import { ListaExercicios2RoutingModule } from './lista-exercicios-2-routing-module';
+import { Ex5ListaDeNomes } from './ex5-lista-de-nomes/ex5-lista-de-nomes';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ListaExercicios2RoutingModule } from './lista-exercicios-2-routing-modu
     Ex2SituacaoDoUsuario,
     Ex3VerificacaoDeIdade,
     Ex4SituacaoDoEstoque,
+    Ex5ListaDeNomes,
   ],
   imports: [CommonModule, FormsModule, ListaExercicios2RoutingModule],
 })

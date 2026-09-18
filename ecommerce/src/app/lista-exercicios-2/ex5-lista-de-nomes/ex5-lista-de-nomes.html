@@ -1,0 +1,19 @@
+<p>ex5-lista-de-nomes works!</p>
+
+<!-- @for (nome of nomes; track nome.id; let i = $index) {
+    <p>{{ i + 1 }} - {{ nome.nome }} {{ i === 0 ? " - primeiro da lista!" : "" }} {{ i === nomes.length - 1 ? " - ultimo da lista!" : "" }}</p>
+}
+funciona mas fica extenso e nao usar fiste e last    -->
+
+<ul>
+    @for (pessoa of pessoas; track pessoa.id) {
+        <li>{{ $index + 1 }} - {{ pessoa.nome }}
+            @if ($first) {
+                <strong> - Primeiro da lista!</strong>
+            }
+            @if ($last) {
+                <strong> - Último da lista!</strong>
+            }
+        </li>
+    }
+</ul>

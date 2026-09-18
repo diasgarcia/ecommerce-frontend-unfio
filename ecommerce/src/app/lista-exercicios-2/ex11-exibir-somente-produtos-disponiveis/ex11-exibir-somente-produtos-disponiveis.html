@@ -1,0 +1,41 @@
+<p>ex11-exibir-somente-produtos-disponiveis works!</p>
+
+<label>
+  <input type="checkbox" [(ngModel)]="somenteDisponiveis" />
+  Exibir somente produtos disponíveis
+</label>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Qtd</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (p of produtos; track p.id) {
+      @if (!somenteDisponiveis || p.quantidade > 0) {
+        <tr>
+          <td>{{ $index + 1 }}</td>
+          <td>{{ p.nome }}</td>
+          <td>{{ p.preco | currency: 'BRL' }}</td>
+          <td>{{ p.quantidade }}</td>
+        </tr>
+      }
+    }
+  </tbody>
+</table>
+
+Sintaxe tradicional equivalente com ng-container:
+<table>
+  <tbody>
+    <ng-container *ngFor="let p of produtos">
+      <tr *ngIf="!somenteDisponiveis || p.quantidade > 0">
+        <td>{{ p.nome }}</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>
+

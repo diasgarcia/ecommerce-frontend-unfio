@@ -10,6 +10,7 @@ import { Ex7CoresAlternadas } from './ex7-cores-alternadas/ex7-cores-alternadas'
 import { Ex8ListaDeProdutos } from './ex8-lista-de-produtos/ex8-lista-de-produtos';
 import { Ex9ClassificacaoDosProdutos } from './ex9-classificacao-dos-produtos/ex9-classificacao-dos-produtos';
 import { Ex10PromocaoEEstiloDinamico } from './ex10-promocao-e-estilo-dinamico/ex10-promocao-e-estilo-dinamico';
+import { Ex11ExibirSomenteProdutosDisponiveis } from './ex11-exibir-somente-produtos-disponiveis/ex11-exibir-somente-produtos-disponiveis';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'ex10',
     component: Ex10PromocaoEEstiloDinamico,
+  },
+  {
+    path: 'ex11',
+    component: Ex11ExibirSomenteProdutosDisponiveis,
   },
 ];
 

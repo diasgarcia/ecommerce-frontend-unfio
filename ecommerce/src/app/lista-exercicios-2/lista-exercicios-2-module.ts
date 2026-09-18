@@ -14,6 +14,7 @@ import { Ex7CoresAlternadas } from './ex7-cores-alternadas/ex7-cores-alternadas'
 import { Ex8ListaDeProdutos } from './ex8-lista-de-produtos/ex8-lista-de-produtos';
 import { Ex9ClassificacaoDosProdutos } from './ex9-classificacao-dos-produtos/ex9-classificacao-dos-produtos';
 import { Ex10PromocaoEEstiloDinamico } from './ex10-promocao-e-estilo-dinamico/ex10-promocao-e-estilo-dinamico';
+import { Ex11ExibirSomenteProdutosDisponiveis } from './ex11-exibir-somente-produtos-disponiveis/ex11-exibir-somente-produtos-disponiveis';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { Ex10PromocaoEEstiloDinamico } from './ex10-promocao-e-estilo-dinamico/e
     Ex8ListaDeProdutos,
     Ex9ClassificacaoDosProdutos,
     Ex10PromocaoEEstiloDinamico,
+    Ex11ExibirSomenteProdutosDisponiveis,
   ],
   imports: [CommonModule, FormsModule, CurrencyPipe, NgClass, ListaExercicios2RoutingModule],
 })

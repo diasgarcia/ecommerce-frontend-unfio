@@ -10,6 +10,7 @@ import { Ex4SituacaoDoEstoque } from './ex4-situacao-do-estoque/ex4-situacao-do-
 import { ListaExercicios2RoutingModule } from './lista-exercicios-2-routing-module';
 import { Ex5ListaDeNomes } from './ex5-lista-de-nomes/ex5-lista-de-nomes';
 import { Ex6TratamentoDeListaVazia } from './ex6-tratamento-de-lista-vazia/ex6-tratamento-de-lista-vazia';
+import { Ex7CoresAlternadas } from './ex7-cores-alternadas/ex7-cores-alternadas';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { Ex6TratamentoDeListaVazia } from './ex6-tratamento-de-lista-vazia/ex6-t
     Ex4SituacaoDoEstoque,
     Ex5ListaDeNomes,
     Ex6TratamentoDeListaVazia,
+    Ex7CoresAlternadas,
   ],
   imports: [CommonModule, FormsModule, ListaExercicios2RoutingModule],
 })

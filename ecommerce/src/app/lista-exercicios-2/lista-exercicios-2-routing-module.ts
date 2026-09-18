@@ -6,6 +6,8 @@ import { Ex3VerificacaoDeIdade } from './ex3-verificacao-de-idade/ex3-verificaca
 import { Ex4SituacaoDoEstoque } from './ex4-situacao-do-estoque/ex4-situacao-do-estoque';
 import { Ex5ListaDeNomes } from './ex5-lista-de-nomes/ex5-lista-de-nomes';
 import { Ex6TratamentoDeListaVazia } from './ex6-tratamento-de-lista-vazia/ex6-tratamento-de-lista-vazia';
+import { Ex7NomeEmTempoReal } from '../lista-exercicios/ex7-nome-em-tempo-real/ex7-nome-em-tempo-real';
+import { Ex7CoresAlternadas } from './ex7-cores-alternadas/ex7-cores-alternadas';
 
 const routes: Routes = [
   {
@@ -31,6 +33,10 @@ const routes: Routes = [
   {
     path: 'ex6',
     component: Ex6TratamentoDeListaVazia,
+  },
+  {
+    path: 'ex7',
+    component: Ex7CoresAlternadas,
   },
 ];
 

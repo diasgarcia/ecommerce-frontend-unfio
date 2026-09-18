@@ -1,0 +1,14 @@
+<p>ex7-cores-alternadas works!</p>
+
+<ul>
+    @for (diciplina of diciplinas; track diciplina.id) {
+        <li [ngClass]="{
+            'cor-de-fundo-par': $even,
+            'cor-de-fundo-impar': $odd,
+            'primeira-diciplina': $first,
+            'ultima-diciplina': $last
+        }">
+            {{ diciplina.nome }}
+        </li>
+    }
+</ul>

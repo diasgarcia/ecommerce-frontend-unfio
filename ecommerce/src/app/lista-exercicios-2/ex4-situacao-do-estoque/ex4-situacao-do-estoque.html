@@ -1,0 +1,12 @@
+<p>ex4-situacao-do-estoque works!</p>
+
+<p>O produto {{ nomeProduto }} tem {{ quantidadeEstoque}} unidades.</p>
+
+@if (quantidadeEstoque > 0) {
+    <p>Produto disponivel!</p>
+} @else {
+    <p>Produto indisponivel!</p>
+}
+
+<button  [disabled]="botaoRemoverValido" (click)="removerUnidade()">Remover unidade</button>
+<button (click)="adicionarUnidade()">Adicionar unidade</button>

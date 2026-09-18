@@ -1,0 +1,32 @@
+<p>ex9-classificacao-dos-produtos works!</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Preço</th>
+      <th>Qtd</th>
+      <th>Total</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (p of produtos; track p.id) {
+      <tr>
+        <td>{{ $index + 1 }}</td>
+        <td>{{ p.nome }}</td>
+        <td class="num">{{ p.preco | currency:'BRL' }}</td>
+        <td class="num">{{ p.quantidade }}</td>
+        <td class="num">{{ p.preco * p.quantidade | currency:'BRL' }}</td>
+        <td [ngClass]="{
+            'sem-estoque': p.quantidade === 0,
+            'estoque-baixo': p.quantidade > 0 && p.quantidade <= 5,
+            'estoque-disponivel': p.quantidade > 5
+        }">
+            {{ p.quantidade === 0 ? 'Sem estoque' : p.quantidade <= 5 ? 'Estoque baixo' : 'Disponível' }}
+        </td>
+      </tr>
+    }
+  </tbody>
+</table>

@@ -1,4 +1,4 @@
-import { CommonModule, CurrencyPipe } from '@angular/common';
+import { CommonModule, CurrencyPipe, NgClass } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
@@ -12,6 +12,7 @@ import { Ex5ListaDeNomes } from './ex5-lista-de-nomes/ex5-lista-de-nomes';
 import { Ex6TratamentoDeListaVazia } from './ex6-tratamento-de-lista-vazia/ex6-tratamento-de-lista-vazia';
 import { Ex7CoresAlternadas } from './ex7-cores-alternadas/ex7-cores-alternadas';
 import { Ex8ListaDeProdutos } from './ex8-lista-de-produtos/ex8-lista-de-produtos';
+import { Ex9ClassificacaoDosProdutos } from './ex9-classificacao-dos-produtos/ex9-classificacao-dos-produtos';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { Ex8ListaDeProdutos } from './ex8-lista-de-produtos/ex8-lista-de-produto
     Ex6TratamentoDeListaVazia,
     Ex7CoresAlternadas,
     Ex8ListaDeProdutos,
+    Ex9ClassificacaoDosProdutos,
   ],
-  imports: [CommonModule, FormsModule, CurrencyPipe, ListaExercicios2RoutingModule],
+  imports: [CommonModule, FormsModule, CurrencyPipe, NgClass, ListaExercicios2RoutingModule],
 })
 export class ListaExercicios2Module {}

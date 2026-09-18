@@ -8,6 +8,7 @@ import { Ex5ListaDeNomes } from './ex5-lista-de-nomes/ex5-lista-de-nomes';
 import { Ex6TratamentoDeListaVazia } from './ex6-tratamento-de-lista-vazia/ex6-tratamento-de-lista-vazia';
 import { Ex7CoresAlternadas } from './ex7-cores-alternadas/ex7-cores-alternadas';
 import { Ex8ListaDeProdutos } from './ex8-lista-de-produtos/ex8-lista-de-produtos';
+import { Ex9ClassificacaoDosProdutos } from './ex9-classificacao-dos-produtos/ex9-classificacao-dos-produtos';
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'ex8',
     component: Ex8ListaDeProdutos,
+  },
+  {
+    path: 'ex9',
+    component: Ex9ClassificacaoDosProdutos,
   },
 ];
 

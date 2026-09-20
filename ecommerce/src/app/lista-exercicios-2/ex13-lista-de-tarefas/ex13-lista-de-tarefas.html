@@ -1,0 +1,39 @@
+<h2>Ex13 - Lista de tarefas</h2>
+
+<p>Total de tarefas: {{ total }} | Concluídas: {{ concluidas }} | Pendentes: {{ pendentes }}</p>
+
+@if (tarefas.length === 0) {
+  <p>Nenhuma tarefa cadastrada.</p>
+} @else {
+  <ul>
+    @for (t of tarefas; track t.id) {
+      <li
+        [ngClass]="{
+          'prioridade-baixa': t.prioridade === 'baixa',
+          'prioridade-media': t.prioridade === 'media',
+          'prioridade-alta': t.prioridade === 'alta',
+          concluida: t.concluida,
+        }"
+      >
+        <strong>{{ t.titulo }}</strong>
+        <span> - Responsável: {{ t.responsavel }}</span>
+        <span> - Prioridade: {{ t.prioridade }}</span>
+        <span>
+          -
+          @if (t.concluida) {
+            <span class="status">Concluída</span>
+          } @else {
+            <span class="status">Pendente</span>
+          }
+        </span>
+        <button type="button" (click)="alternarSituacao(t)">
+          @if (t.concluida) {
+            Marcar como pendente
+          } @else {
+            Marcar como concluída
+          }
+        </button>
+      </li>
+    }
+  </ul>
+}

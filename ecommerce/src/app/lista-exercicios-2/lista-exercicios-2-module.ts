@@ -16,6 +16,7 @@ import { Ex9ClassificacaoDosProdutos } from './ex9-classificacao-dos-produtos/ex
 import { Ex10PromocaoEEstiloDinamico } from './ex10-promocao-e-estilo-dinamico/ex10-promocao-e-estilo-dinamico';
 import { Ex11ExibirSomenteProdutosDisponiveis } from './ex11-exibir-somente-produtos-disponiveis/ex11-exibir-somente-produtos-disponiveis';
 import { Ex12CadastroSimplificado } from './ex12-cadastro-simplificado/ex12-cadastro-simplificado';
+import { Ex13ListaDeTarefas } from './ex13-lista-de-tarefas/ex13-lista-de-tarefas';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { Ex12CadastroSimplificado } from './ex12-cadastro-simplificado/ex12-cada
     Ex10PromocaoEEstiloDinamico,
     Ex11ExibirSomenteProdutosDisponiveis,
     Ex12CadastroSimplificado,
+    Ex13ListaDeTarefas,
   ],
   imports: [CommonModule, FormsModule, CurrencyPipe, NgClass, ListaExercicios2RoutingModule],
 })

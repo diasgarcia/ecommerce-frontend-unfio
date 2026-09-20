@@ -1,0 +1,40 @@
+<h2>Ex12 — Cadastro simplificado</h2>
+
+<div class="form">
+  <label>
+    Nome do produto:
+    <input type="text" placeholder="Ex: Teclado mecânico" [(ngModel)]="nome" />
+  </label>
+
+  <br />
+
+  <label>
+    Quantidade:
+    <input type="number" min="0" placeholder="Ex: 10" [(ngModel)]="quantidade" />
+  </label>
+
+  <button type="button" (click)="cadastrar()">Cadastrar</button>
+</div>
+
+@if (mensagemErro) {
+  <p class="erro">{{ mensagemErro }}</p>
+}
+
+<hr />
+
+<h3>Produtos cadastrados ({{ produtos.length }})</h3>
+
+@if (produtos.length === 0) {
+  <p>Nenhum produto cadastrado.</p>
+}
+
+@if (produtos.length > 0) {
+  <ul>
+    @for (p of produtos; track p.id) {
+      <li>
+        <span>{{ p.nome }} - quantidade: {{ p.quantidade }}</span>
+        <button type="button" (click)="excluir(p.id)">Excluir</button>
+      </li>
+    }
+  </ul>
+}

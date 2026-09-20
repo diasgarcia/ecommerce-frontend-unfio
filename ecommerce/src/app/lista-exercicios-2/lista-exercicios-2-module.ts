@@ -17,6 +17,7 @@ import { Ex10PromocaoEEstiloDinamico } from './ex10-promocao-e-estilo-dinamico/e
 import { Ex11ExibirSomenteProdutosDisponiveis } from './ex11-exibir-somente-produtos-disponiveis/ex11-exibir-somente-produtos-disponiveis';
 import { Ex12CadastroSimplificado } from './ex12-cadastro-simplificado/ex12-cadastro-simplificado';
 import { Ex13ListaDeTarefas } from './ex13-lista-de-tarefas/ex13-lista-de-tarefas';
+import { DesafioFinalPainelDeProjetos } from './desafio-final-painel-de-projetos/desafio-final-painel-de-projetos';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { Ex13ListaDeTarefas } from './ex13-lista-de-tarefas/ex13-lista-de-tarefa
     Ex11ExibirSomenteProdutosDisponiveis,
     Ex12CadastroSimplificado,
     Ex13ListaDeTarefas,
+    DesafioFinalPainelDeProjetos,
   ],
   imports: [CommonModule, FormsModule, CurrencyPipe, NgClass, ListaExercicios2RoutingModule],
 })

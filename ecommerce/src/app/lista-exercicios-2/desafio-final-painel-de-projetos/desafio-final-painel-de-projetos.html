@@ -1,0 +1,65 @@
+<h2>Painel de Projetos Integradores</h2>
+
+<p>Total de projetos: {{ total }} | Concluídos: {{ totalConcluidos }}</p>
+
+<button type="button" (click)="alternarExibicaoConcluidos()">
+  @if (mostrarConcluidos) {
+    Ocultar projetos concluídos
+  } @else {
+    Mostrar projetos concluídos
+  }
+</button>
+
+<hr />
+
+@if (projetosVisiveis.length === 0) {
+  <p>Nenhum projeto encontrado.</p>
+} @else {
+  <ul>
+    @for (projeto of projetosVisiveis; track projeto.id) {
+      <li
+        [ngClass]="{
+          'status-planejamento': projeto.status === 'planejamento',
+          'status-desenvolvimento': projeto.status === 'desenvolvimento',
+          'status-testes': projeto.status === 'testes',
+          'status-concluido': projeto.status === 'concluído',
+          'destaque-aprovado': projeto.nota !== null && projeto.nota >= 7,
+          'alerta-nota-baixa': projeto.nota !== null && projeto.nota < 6,
+        }"
+      >
+        <strong>{{ $index + 1 }}. {{ projeto.titulo }}</strong>
+        <span> - Equipe: {{ projeto.equipe }}</span>
+        <span> - Status: {{ projeto.status }}</span>
+        <span>
+          - Nota:
+          @if (projeto.nota === null || projeto.nota === undefined) {
+            <span>Nota ainda não definida</span>
+          } @else {
+            <span>{{ projeto.nota }}</span>
+          }
+        </span>
+
+        @if (projeto.nota !== null && projeto.nota !== undefined && projeto.nota >= 7) {
+          <span class="selo-aprovado">Destaque</span>
+        }
+
+        @if (projeto.nota !== null && projeto.nota !== undefined && projeto.nota < 6) {
+          <span class="selo-atencao">Atenção: nota baixa</span>
+        }
+
+        @if (projeto.entregue) {
+          <span class="selo-entregue"> Projeto entregue</span>
+        }
+
+        <label>
+          Alterar status:
+          <select [(ngModel)]="projeto.status">
+            @for (opcao of statusOpcoes; track opcao) {
+              <option [value]="opcao">{{ opcao }}</option>
+            }
+          </select>
+        </label>
+      </li>
+    }
+  </ul>
+}
